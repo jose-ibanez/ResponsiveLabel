@@ -43,7 +43,7 @@
 		6919B94C1B60EB60000EE885 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		69CCA6EB1AC58ADD00D8CAC0 /* PatternDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatternDescriptor.h; path = Source/PatternDescriptor.h; sourceTree = "<group>"; };
 		69CCA6EC1AC58ADD00D8CAC0 /* PatternDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatternDescriptor.m; path = Source/PatternDescriptor.m; sourceTree = "<group>"; };
-		69D5E5651AB3040D00B64BDE /* ResponsiveLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResponsiveLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D5E5651AB3040D00B64BDE /* ResponsiveLabelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResponsiveLabelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5E5691AB3040D00B64BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D5E56A1AB3040D00B64BDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69D5E58E1AB3045B00B64BDE /* ResponsiveLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResponsiveLabel.h; path = Source/ResponsiveLabel.h; sourceTree = "<group>"; };
@@ -63,7 +63,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6919B93F1B60EB60000EE885 /* Demo Project */ = {
+		69D5E55C1AB3040D00B64BDE = {
+			isa = PBXGroup;
+			children = (
+				69D5E5671AB3040D00B64BDE /* ResponsiveLabelApp */,
+				69D5E5661AB3040D00B64BDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69D5E5661AB3040D00B64BDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69D5E5651AB3040D00B64BDE /* ResponsiveLabelApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69D5E5671AB3040D00B64BDE /* ResponsiveLabelApp */ = {
 			isa = PBXGroup;
 			children = (
 				6919B9481B60EB60000EE885 /* Images.xcassets */,
@@ -77,34 +93,10 @@
 				6919B94A1B60EB60000EE885 /* MainViewController.m */,
 				6919B94B1B60EB60000EE885 /* ViewController.h */,
 				6919B94C1B60EB60000EE885 /* ViewController.m */,
-			);
-			path = "Demo Project";
-			sourceTree = "<group>";
-		};
-		69D5E55C1AB3040D00B64BDE = {
-			isa = PBXGroup;
-			children = (
-				69D5E5671AB3040D00B64BDE /* ResponsiveLabel */,
-				69D5E5661AB3040D00B64BDE /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		69D5E5661AB3040D00B64BDE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				69D5E5651AB3040D00B64BDE /* ResponsiveLabel.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		69D5E5671AB3040D00B64BDE /* ResponsiveLabel */ = {
-			isa = PBXGroup;
-			children = (
-				6919B93F1B60EB60000EE885 /* Demo Project */,
 				69D5E5681AB3040D00B64BDE /* Supporting Files */,
 				69D5E5911AB3045F00B64BDE /* Source */,
 			);
-			path = ResponsiveLabel;
+			path = ResponsiveLabelApp;
 			sourceTree = "<group>";
 		};
 		69D5E5681AB3040D00B64BDE /* Supporting Files */ = {
@@ -138,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		69D5E5641AB3040D00B64BDE /* ResponsiveLabel */ = {
+		69D5E5641AB3040D00B64BDE /* ResponsiveLabelApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69D5E5881AB3040D00B64BDE /* Build configuration list for PBXNativeTarget "ResponsiveLabel" */;
+			buildConfigurationList = 69D5E5881AB3040D00B64BDE /* Build configuration list for PBXNativeTarget "ResponsiveLabelApp" */;
 			buildPhases = (
 				69D5E5611AB3040D00B64BDE /* Sources */,
 				69D5E5621AB3040D00B64BDE /* Frameworks */,
@@ -150,9 +142,9 @@
 			);
 			dependencies = (
 			);
-			name = ResponsiveLabel;
+			name = ResponsiveLabelApp;
 			productName = ResponsiveLabel;
-			productReference = 69D5E5651AB3040D00B64BDE /* ResponsiveLabel.app */;
+			productReference = 69D5E5651AB3040D00B64BDE /* ResponsiveLabelApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				69D5E5641AB3040D00B64BDE /* ResponsiveLabel */,
+				69D5E5641AB3040D00B64BDE /* ResponsiveLabelApp */,
 			);
 		};
 /* End PBXProject section */
@@ -351,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		69D5E5881AB3040D00B64BDE /* Build configuration list for PBXNativeTarget "ResponsiveLabel" */ = {
+		69D5E5881AB3040D00B64BDE /* Build configuration list for PBXNativeTarget "ResponsiveLabelApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69D5E5891AB3040D00B64BDE /* Debug */,
