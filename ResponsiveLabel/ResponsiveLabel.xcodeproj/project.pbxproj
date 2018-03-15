@@ -19,20 +19,9 @@
 		6919B9531B60EB60000EE885 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6919B94C1B60EB60000EE885 /* ViewController.m */; };
 		69CCA6ED1AC58ADD00D8CAC0 /* PatternDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CCA6EC1AC58ADD00D8CAC0 /* PatternDescriptor.m */; };
 		69D5E56B1AB3040D00B64BDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D5E56A1AB3040D00B64BDE /* main.m */; };
-		69D5E5851AB3040D00B64BDE /* ResponsiveLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D5E5841AB3040D00B64BDE /* ResponsiveLabelTests.m */; };
 		69D5E5901AB3045B00B64BDE /* ResponsiveLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D5E58F1AB3045B00B64BDE /* ResponsiveLabel.m */; };
 		69FA99861B8F26E300FD8AD8 /* CustomLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FA99851B8F26E300FD8AD8 /* CustomLayoutManager.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		69D5E57F1AB3040D00B64BDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 69D5E55D1AB3040D00B64BDE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 69D5E5641AB3040D00B64BDE;
-			remoteInfo = ResponsiveLabel;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4E2AFD3A1CB507B600E8D9B9 /* NSMutableAttributedString+BoundChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+BoundChecker.h"; path = "Source/NSMutableAttributedString+BoundChecker.h"; sourceTree = "<group>"; };
@@ -57,9 +46,6 @@
 		69D5E5651AB3040D00B64BDE /* ResponsiveLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResponsiveLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5E5691AB3040D00B64BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D5E56A1AB3040D00B64BDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		69D5E57E1AB3040D00B64BDE /* ResponsiveLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResponsiveLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		69D5E5831AB3040D00B64BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69D5E5841AB3040D00B64BDE /* ResponsiveLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponsiveLabelTests.m; sourceTree = "<group>"; };
 		69D5E58E1AB3045B00B64BDE /* ResponsiveLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResponsiveLabel.h; path = Source/ResponsiveLabel.h; sourceTree = "<group>"; };
 		69D5E58F1AB3045B00B64BDE /* ResponsiveLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResponsiveLabel.m; path = Source/ResponsiveLabel.m; sourceTree = "<group>"; };
 		69FA99841B8F26E300FD8AD8 /* CustomLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomLayoutManager.h; path = Source/CustomLayoutManager.h; sourceTree = "<group>"; };
@@ -68,13 +54,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		69D5E5621AB3040D00B64BDE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69D5E57B1AB3040D00B64BDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				69D5E5671AB3040D00B64BDE /* ResponsiveLabel */,
-				69D5E5811AB3040D00B64BDE /* ResponsiveLabelTests */,
 				69D5E5661AB3040D00B64BDE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				69D5E5651AB3040D00B64BDE /* ResponsiveLabel.app */,
-				69D5E57E1AB3040D00B64BDE /* ResponsiveLabelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,23 +112,6 @@
 			children = (
 				69D5E5691AB3040D00B64BDE /* Info.plist */,
 				69D5E56A1AB3040D00B64BDE /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		69D5E5811AB3040D00B64BDE /* ResponsiveLabelTests */ = {
-			isa = PBXGroup;
-			children = (
-				69D5E5841AB3040D00B64BDE /* ResponsiveLabelTests.m */,
-				69D5E5821AB3040D00B64BDE /* Supporting Files */,
-			);
-			path = ResponsiveLabelTests;
-			sourceTree = "<group>";
-		};
-		69D5E5821AB3040D00B64BDE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				69D5E5831AB3040D00B64BDE /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,24 +155,6 @@
 			productReference = 69D5E5651AB3040D00B64BDE /* ResponsiveLabel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		69D5E57D1AB3040D00B64BDE /* ResponsiveLabelTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 69D5E58B1AB3040D00B64BDE /* Build configuration list for PBXNativeTarget "ResponsiveLabelTests" */;
-			buildPhases = (
-				69D5E57A1AB3040D00B64BDE /* Sources */,
-				69D5E57B1AB3040D00B64BDE /* Frameworks */,
-				69D5E57C1AB3040D00B64BDE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				69D5E5801AB3040D00B64BDE /* PBXTargetDependency */,
-			);
-			name = ResponsiveLabelTests;
-			productName = ResponsiveLabelTests;
-			productReference = 69D5E57E1AB3040D00B64BDE /* ResponsiveLabelTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -224,10 +166,6 @@
 				TargetAttributes = {
 					69D5E5641AB3040D00B64BDE = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					69D5E57D1AB3040D00B64BDE = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 69D5E5641AB3040D00B64BDE;
 					};
 				};
 			};
@@ -245,7 +183,6 @@
 			projectRoot = "";
 			targets = (
 				69D5E5641AB3040D00B64BDE /* ResponsiveLabel */,
-				69D5E57D1AB3040D00B64BDE /* ResponsiveLabelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,13 +195,6 @@
 				6919B94E1B60EB60000EE885 /* LaunchScreen.xib in Resources */,
 				6919B94F1B60EB60000EE885 /* Main.storyboard in Resources */,
 				6919B9511B60EB60000EE885 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69D5E57C1AB3040D00B64BDE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,23 +219,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69D5E57A1AB3040D00B64BDE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69D5E5851AB3040D00B64BDE /* ResponsiveLabelTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		69D5E5801AB3040D00B64BDE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 69D5E5641AB3040D00B64BDE /* ResponsiveLabel */;
-			targetProxy = 69D5E57F1AB3040D00B64BDE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6919B9421B60EB60000EE885 /* LaunchScreen.xib */ = {
@@ -425,42 +339,6 @@
 			};
 			name = Release;
 		};
-		69D5E58C1AB3040D00B64BDE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ResponsiveLabelTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ResponsiveLabel.app/ResponsiveLabel";
-			};
-			name = Debug;
-		};
-		69D5E58D1AB3040D00B64BDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ResponsiveLabelTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ResponsiveLabel.app/ResponsiveLabel";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -478,15 +356,6 @@
 			buildConfigurations = (
 				69D5E5891AB3040D00B64BDE /* Debug */,
 				69D5E58A1AB3040D00B64BDE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		69D5E58B1AB3040D00B64BDE /* Build configuration list for PBXNativeTarget "ResponsiveLabelTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69D5E58C1AB3040D00B64BDE /* Debug */,
-				69D5E58D1AB3040D00B64BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
