@@ -7,8 +7,8 @@
 //
 
 #import "MainViewController.h"
-#import "ResponsiveLabel.h"
 #import "NSAttributedString+Processing.h"
+@import HSResponsiveLabel;
 
 @interface MainViewController ()
 

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ResponsiveLabel.h"
+@import HSResponsiveLabel;
 
 @protocol CustomTableViewCellDelegate;
 

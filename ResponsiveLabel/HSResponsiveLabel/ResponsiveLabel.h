@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PatternDescriptor.h"
+@class PatternDescriptor;
 
 /**
  Custom NSTextAttributeName which takes value of type PatternTapHandler.

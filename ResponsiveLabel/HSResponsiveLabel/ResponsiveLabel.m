@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 hsusmita.com. All rights reserved.
 //
 
+#import "PatternDescriptor.h"
 #import "ResponsiveLabel.h"
 #import "NSAttributedString+Processing.h"
 #import "NSMutableAttributedString+BoundChecker.h"

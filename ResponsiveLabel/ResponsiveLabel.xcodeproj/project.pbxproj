@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E2AFD3C1CB507B600E8D9B9 /* NSMutableAttributedString+BoundChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2AFD3B1CB507B600E8D9B9 /* NSMutableAttributedString+BoundChecker.m */; };
-		6907ADA11B5E644100723CFF /* InlineTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907ADA01B5E644100723CFF /* InlineTextAttachment.m */; };
-		6907ADA41B5E645800723CFF /* NSAttributedString+Processing.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907ADA31B5E645800723CFF /* NSAttributedString+Processing.m */; };
+		19CB66A2205A206D007688CB /* HSResponsiveLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CB66A0205A206D007688CB /* HSResponsiveLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19CB66A5205A206D007688CB /* HSResponsiveLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CB669E205A206D007688CB /* HSResponsiveLabel.framework */; };
+		19CB66A6205A206D007688CB /* HSResponsiveLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19CB669E205A206D007688CB /* HSResponsiveLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19CB66B7205A2116007688CB /* CustomLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CB66AB205A2116007688CB /* CustomLayoutManager.m */; };
+		19CB66B8205A2116007688CB /* NSMutableAttributedString+BoundChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CB66AC205A2116007688CB /* NSMutableAttributedString+BoundChecker.h */; };
+		19CB66B9205A2116007688CB /* PatternDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CB66AD205A2116007688CB /* PatternDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19CB66BA205A2116007688CB /* PatternDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CB66AE205A2116007688CB /* PatternDescriptor.m */; };
+		19CB66BB205A2116007688CB /* ResponsiveLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CB66AF205A2116007688CB /* ResponsiveLabel.m */; };
+		19CB66BC205A2116007688CB /* NSAttributedString+Processing.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CB66B0205A2116007688CB /* NSAttributedString+Processing.m */; };
+		19CB66BD205A2116007688CB /* InlineTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CB66B1205A2116007688CB /* InlineTextAttachment.m */; };
+		19CB66BE205A2116007688CB /* CustomLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CB66B2205A2116007688CB /* CustomLayoutManager.h */; };
+		19CB66BF205A2116007688CB /* NSMutableAttributedString+BoundChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CB66B3205A2116007688CB /* NSMutableAttributedString+BoundChecker.m */; };
+		19CB66C0205A2116007688CB /* InlineTextAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CB66B4205A2116007688CB /* InlineTextAttachment.h */; };
+		19CB66C1205A2116007688CB /* ResponsiveLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CB66B5205A2116007688CB /* ResponsiveLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19CB66C2205A2116007688CB /* NSAttributedString+Processing.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CB66B6205A2116007688CB /* NSAttributedString+Processing.h */; };
 		6919B94D1B60EB60000EE885 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6919B9411B60EB60000EE885 /* AppDelegate.m */; };
 		6919B94E1B60EB60000EE885 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6919B9421B60EB60000EE885 /* LaunchScreen.xib */; };
 		6919B94F1B60EB60000EE885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6919B9441B60EB60000EE885 /* Main.storyboard */; };
@@ -17,19 +29,49 @@
 		6919B9511B60EB60000EE885 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6919B9481B60EB60000EE885 /* Images.xcassets */; };
 		6919B9521B60EB60000EE885 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6919B94A1B60EB60000EE885 /* MainViewController.m */; };
 		6919B9531B60EB60000EE885 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6919B94C1B60EB60000EE885 /* ViewController.m */; };
-		69CCA6ED1AC58ADD00D8CAC0 /* PatternDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CCA6EC1AC58ADD00D8CAC0 /* PatternDescriptor.m */; };
 		69D5E56B1AB3040D00B64BDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D5E56A1AB3040D00B64BDE /* main.m */; };
-		69D5E5901AB3045B00B64BDE /* ResponsiveLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D5E58F1AB3045B00B64BDE /* ResponsiveLabel.m */; };
-		69FA99861B8F26E300FD8AD8 /* CustomLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FA99851B8F26E300FD8AD8 /* CustomLayoutManager.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		19CB66A3205A206D007688CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69D5E55D1AB3040D00B64BDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19CB669D205A206D007688CB;
+			remoteInfo = HSResponsiveLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19CB66AA205A206D007688CB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				19CB66A6205A206D007688CB /* HSResponsiveLabel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		4E2AFD3A1CB507B600E8D9B9 /* NSMutableAttributedString+BoundChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+BoundChecker.h"; path = "Source/NSMutableAttributedString+BoundChecker.h"; sourceTree = "<group>"; };
-		4E2AFD3B1CB507B600E8D9B9 /* NSMutableAttributedString+BoundChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+BoundChecker.m"; path = "Source/NSMutableAttributedString+BoundChecker.m"; sourceTree = "<group>"; };
-		6907AD9F1B5E644100723CFF /* InlineTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InlineTextAttachment.h; path = Source/InlineTextAttachment.h; sourceTree = "<group>"; };
-		6907ADA01B5E644100723CFF /* InlineTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InlineTextAttachment.m; path = Source/InlineTextAttachment.m; sourceTree = "<group>"; };
-		6907ADA21B5E645800723CFF /* NSAttributedString+Processing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+Processing.h"; path = "Source/NSAttributedString+Processing.h"; sourceTree = "<group>"; };
-		6907ADA31B5E645800723CFF /* NSAttributedString+Processing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+Processing.m"; path = "Source/NSAttributedString+Processing.m"; sourceTree = "<group>"; };
+		19CB669E205A206D007688CB /* HSResponsiveLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSResponsiveLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19CB66A0205A206D007688CB /* HSResponsiveLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSResponsiveLabel.h; sourceTree = "<group>"; };
+		19CB66A1205A206D007688CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19CB66AB205A2116007688CB /* CustomLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayoutManager.m; sourceTree = "<group>"; };
+		19CB66AC205A2116007688CB /* NSMutableAttributedString+BoundChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+BoundChecker.h"; sourceTree = "<group>"; };
+		19CB66AD205A2116007688CB /* PatternDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatternDescriptor.h; sourceTree = "<group>"; };
+		19CB66AE205A2116007688CB /* PatternDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatternDescriptor.m; sourceTree = "<group>"; };
+		19CB66AF205A2116007688CB /* ResponsiveLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponsiveLabel.m; sourceTree = "<group>"; };
+		19CB66B0205A2116007688CB /* NSAttributedString+Processing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Processing.m"; sourceTree = "<group>"; };
+		19CB66B1205A2116007688CB /* InlineTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InlineTextAttachment.m; sourceTree = "<group>"; };
+		19CB66B2205A2116007688CB /* CustomLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayoutManager.h; sourceTree = "<group>"; };
+		19CB66B3205A2116007688CB /* NSMutableAttributedString+BoundChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+BoundChecker.m"; sourceTree = "<group>"; };
+		19CB66B4205A2116007688CB /* InlineTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InlineTextAttachment.h; sourceTree = "<group>"; };
+		19CB66B5205A2116007688CB /* ResponsiveLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponsiveLabel.h; sourceTree = "<group>"; };
+		19CB66B6205A2116007688CB /* NSAttributedString+Processing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Processing.h"; sourceTree = "<group>"; };
 		6919B9401B60EB60000EE885 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6919B9411B60EB60000EE885 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6919B9431B60EB60000EE885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -41,32 +83,64 @@
 		6919B94A1B60EB60000EE885 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		6919B94B1B60EB60000EE885 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6919B94C1B60EB60000EE885 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		69CCA6EB1AC58ADD00D8CAC0 /* PatternDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatternDescriptor.h; path = Source/PatternDescriptor.h; sourceTree = "<group>"; };
-		69CCA6EC1AC58ADD00D8CAC0 /* PatternDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatternDescriptor.m; path = Source/PatternDescriptor.m; sourceTree = "<group>"; };
 		69D5E5651AB3040D00B64BDE /* ResponsiveLabelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResponsiveLabelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5E5691AB3040D00B64BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D5E56A1AB3040D00B64BDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		69D5E58E1AB3045B00B64BDE /* ResponsiveLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResponsiveLabel.h; path = Source/ResponsiveLabel.h; sourceTree = "<group>"; };
-		69D5E58F1AB3045B00B64BDE /* ResponsiveLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResponsiveLabel.m; path = Source/ResponsiveLabel.m; sourceTree = "<group>"; };
-		69FA99841B8F26E300FD8AD8 /* CustomLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomLayoutManager.h; path = Source/CustomLayoutManager.h; sourceTree = "<group>"; };
-		69FA99851B8F26E300FD8AD8 /* CustomLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomLayoutManager.m; path = Source/CustomLayoutManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		69D5E5621AB3040D00B64BDE /* Frameworks */ = {
+		19CB669A205A206D007688CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69D5E5621AB3040D00B64BDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CB66A5205A206D007688CB /* HSResponsiveLabel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19CB669F205A206D007688CB /* HSResponsiveLabel */ = {
+			isa = PBXGroup;
+			children = (
+				19CB66A0205A206D007688CB /* HSResponsiveLabel.h */,
+				19CB66B2205A2116007688CB /* CustomLayoutManager.h */,
+				19CB66AB205A2116007688CB /* CustomLayoutManager.m */,
+				19CB66B4205A2116007688CB /* InlineTextAttachment.h */,
+				19CB66B1205A2116007688CB /* InlineTextAttachment.m */,
+				19CB66B6205A2116007688CB /* NSAttributedString+Processing.h */,
+				19CB66B0205A2116007688CB /* NSAttributedString+Processing.m */,
+				19CB66AC205A2116007688CB /* NSMutableAttributedString+BoundChecker.h */,
+				19CB66B3205A2116007688CB /* NSMutableAttributedString+BoundChecker.m */,
+				19CB66AD205A2116007688CB /* PatternDescriptor.h */,
+				19CB66AE205A2116007688CB /* PatternDescriptor.m */,
+				19CB66B5205A2116007688CB /* ResponsiveLabel.h */,
+				19CB66AF205A2116007688CB /* ResponsiveLabel.m */,
+				19CB66C3205A21B5007688CB /* Supporting Files */,
+			);
+			path = HSResponsiveLabel;
+			sourceTree = "<group>";
+		};
+		19CB66C3205A21B5007688CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19CB66A1205A206D007688CB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		69D5E55C1AB3040D00B64BDE = {
 			isa = PBXGroup;
 			children = (
 				69D5E5671AB3040D00B64BDE /* ResponsiveLabelApp */,
+				19CB669F205A206D007688CB /* HSResponsiveLabel */,
 				69D5E5661AB3040D00B64BDE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				69D5E5651AB3040D00B64BDE /* ResponsiveLabelApp.app */,
+				19CB669E205A206D007688CB /* HSResponsiveLabel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,7 +169,6 @@
 				6919B94B1B60EB60000EE885 /* ViewController.h */,
 				6919B94C1B60EB60000EE885 /* ViewController.m */,
 				69D5E5681AB3040D00B64BDE /* Supporting Files */,
-				69D5E5911AB3045F00B64BDE /* Source */,
 			);
 			path = ResponsiveLabelApp;
 			sourceTree = "<group>";
@@ -108,28 +182,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		69D5E5911AB3045F00B64BDE /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				6907ADA21B5E645800723CFF /* NSAttributedString+Processing.h */,
-				6907ADA31B5E645800723CFF /* NSAttributedString+Processing.m */,
-				69D5E58E1AB3045B00B64BDE /* ResponsiveLabel.h */,
-				69D5E58F1AB3045B00B64BDE /* ResponsiveLabel.m */,
-				69FA99841B8F26E300FD8AD8 /* CustomLayoutManager.h */,
-				69FA99851B8F26E300FD8AD8 /* CustomLayoutManager.m */,
-				69CCA6EB1AC58ADD00D8CAC0 /* PatternDescriptor.h */,
-				69CCA6EC1AC58ADD00D8CAC0 /* PatternDescriptor.m */,
-				6907AD9F1B5E644100723CFF /* InlineTextAttachment.h */,
-				6907ADA01B5E644100723CFF /* InlineTextAttachment.m */,
-				4E2AFD3A1CB507B600E8D9B9 /* NSMutableAttributedString+BoundChecker.h */,
-				4E2AFD3B1CB507B600E8D9B9 /* NSMutableAttributedString+BoundChecker.m */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		19CB669B205A206D007688CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CB66C0205A2116007688CB /* InlineTextAttachment.h in Headers */,
+				19CB66C1205A2116007688CB /* ResponsiveLabel.h in Headers */,
+				19CB66B9205A2116007688CB /* PatternDescriptor.h in Headers */,
+				19CB66C2205A2116007688CB /* NSAttributedString+Processing.h in Headers */,
+				19CB66B8205A2116007688CB /* NSMutableAttributedString+BoundChecker.h in Headers */,
+				19CB66A2205A206D007688CB /* HSResponsiveLabel.h in Headers */,
+				19CB66BE205A2116007688CB /* CustomLayoutManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		19CB669D205A206D007688CB /* HSResponsiveLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19CB66A7205A206D007688CB /* Build configuration list for PBXNativeTarget "HSResponsiveLabel" */;
+			buildPhases = (
+				19CB6699205A206D007688CB /* Sources */,
+				19CB669A205A206D007688CB /* Frameworks */,
+				19CB669B205A206D007688CB /* Headers */,
+				19CB669C205A206D007688CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HSResponsiveLabel;
+			productName = HSResponsiveLabel;
+			productReference = 19CB669E205A206D007688CB /* HSResponsiveLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		69D5E5641AB3040D00B64BDE /* ResponsiveLabelApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69D5E5881AB3040D00B64BDE /* Build configuration list for PBXNativeTarget "ResponsiveLabelApp" */;
@@ -137,10 +227,12 @@
 				69D5E5611AB3040D00B64BDE /* Sources */,
 				69D5E5621AB3040D00B64BDE /* Frameworks */,
 				69D5E5631AB3040D00B64BDE /* Resources */,
+				19CB66AA205A206D007688CB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				19CB66A4205A206D007688CB /* PBXTargetDependency */,
 			);
 			name = ResponsiveLabelApp;
 			productName = ResponsiveLabel;
@@ -153,9 +245,14 @@
 		69D5E55D1AB3040D00B64BDE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = hsusmita.com;
 				TargetAttributes = {
+					19CB669D205A206D007688CB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					69D5E5641AB3040D00B64BDE = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -175,11 +272,19 @@
 			projectRoot = "";
 			targets = (
 				69D5E5641AB3040D00B64BDE /* ResponsiveLabelApp */,
+				19CB669D205A206D007688CB /* HSResponsiveLabel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		19CB669C205A206D007688CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69D5E5631AB3040D00B64BDE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,25 +298,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		19CB6699205A206D007688CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CB66BD205A2116007688CB /* InlineTextAttachment.m in Sources */,
+				19CB66B7205A2116007688CB /* CustomLayoutManager.m in Sources */,
+				19CB66BB205A2116007688CB /* ResponsiveLabel.m in Sources */,
+				19CB66BF205A2116007688CB /* NSMutableAttributedString+BoundChecker.m in Sources */,
+				19CB66BC205A2116007688CB /* NSAttributedString+Processing.m in Sources */,
+				19CB66BA205A2116007688CB /* PatternDescriptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69D5E5611AB3040D00B64BDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69FA99861B8F26E300FD8AD8 /* CustomLayoutManager.m in Sources */,
-				69CCA6ED1AC58ADD00D8CAC0 /* PatternDescriptor.m in Sources */,
-				6907ADA11B5E644100723CFF /* InlineTextAttachment.m in Sources */,
 				6919B94D1B60EB60000EE885 /* AppDelegate.m in Sources */,
-				4E2AFD3C1CB507B600E8D9B9 /* NSMutableAttributedString+BoundChecker.m in Sources */,
 				6919B9501B60EB60000EE885 /* CustomTableViewCell.m in Sources */,
 				6919B9531B60EB60000EE885 /* ViewController.m in Sources */,
 				6919B9521B60EB60000EE885 /* MainViewController.m in Sources */,
-				6907ADA41B5E645800723CFF /* NSAttributedString+Processing.m in Sources */,
-				69D5E5901AB3045B00B64BDE /* ResponsiveLabel.m in Sources */,
 				69D5E56B1AB3040D00B64BDE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19CB66A4205A206D007688CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19CB669D205A206D007688CB /* HSResponsiveLabel */;
+			targetProxy = 19CB66A3205A206D007688CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6919B9421B60EB60000EE885 /* LaunchScreen.xib */ = {
@@ -233,6 +353,85 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		19CB66A8205A206D007688CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HSResponsiveLabel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsusmita.HSResponsiveLabel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		19CB66A9205A206D007688CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HSResponsiveLabel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsusmita.HSResponsiveLabel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		69D5E5861AB3040D00B64BDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -313,8 +512,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ResponsiveLabel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ResponsiveLabelApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -324,8 +524,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ResponsiveLabel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ResponsiveLabelApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -334,6 +535,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		19CB66A7205A206D007688CB /* Build configuration list for PBXNativeTarget "HSResponsiveLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19CB66A8205A206D007688CB /* Debug */,
+				19CB66A9205A206D007688CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		69D5E5601AB3040D00B64BDE /* Build configuration list for PBXProject "ResponsiveLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
