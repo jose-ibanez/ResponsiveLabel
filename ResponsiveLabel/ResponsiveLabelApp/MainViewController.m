@@ -39,11 +39,11 @@
   // Add collapse token
 
   PatternTapResponder tap = ^(NSString *string) {
-	self.responsiveLabel.numberOfLines = 4;
+    self.responsiveLabel.numberOfLines = 4;
   };
 
   NSMutableAttributedString *finalString = [[NSMutableAttributedString alloc]initWithAttributedString:self.responsiveLabel.attributedText];
-  [finalString appendAttributedString:[[NSAttributedString alloc] initWithString:@"...Less"
+  [finalString appendAttributedString:[[NSAttributedString alloc] initWithString:@"... Less"
 						   attributes:@{NSForegroundColorAttributeName:[UIColor blackColor],
 		  RLTapResponderAttributeName:tap}]];
   [self.responsiveLabel setAttributedText:finalString];
@@ -129,29 +129,23 @@
 - (IBAction)handleSegmentChange:(UISegmentedControl*)sender {
   switch (self.segmentControl.selectedSegmentIndex) {
     case 0: {
-
-      [self.responsiveLabel setAttributedTruncationToken:[[NSAttributedString alloc]initWithString:@"...More"
-                                                                                        attributes:@{NSFontAttributeName:self.responsiveLabel.font,NSForegroundColorAttributeName:[UIColor brownColor]}]
-                                              withAction:^(NSString *tappedString) {
-                                                self.messageLabel.text = @"You have tapped token string";
-                                                if (self.responsiveLabel.numberOfLines == 0) {
-                                                  self.responsiveLabel.numberOfLines = 4;
-                                                }else {
-                                                  self.responsiveLabel.numberOfLines = 0;
-                                                  [self.responsiveLabel layoutIfNeeded];
-                                                }
-//                                                self.responsiveLabel.customTruncationEnabled = NO;
-//                                                [self.responsiveLabel setAttributedText:[self.responsiveLabel.attributedText wordWrappedAttributedString]withTruncation:NO];
-                                                
-                                              }];
+      PatternTapResponder tap = ^(NSString *string) {
+        self.responsiveLabel.numberOfLines = 0;
+      };
+      NSDictionary *attributes = @{NSFontAttributeName:self.responsiveLabel.font,
+                                   NSForegroundColorAttributeName:[UIColor brownColor],
+                                   RLTapResponderAttributeName:tap};
+      NSAttributedString *truncationToken = [[NSAttributedString alloc] initWithString:@"... more" attributes:attributes];
+      [self.responsiveLabel setAttributedTruncationToken:truncationToken];
       break;
     }
     case 1:{
+      PatternTapResponder tap = ^(NSString *string) {
+        self.responsiveLabel.numberOfLines = 0;
+      };
       [self.responsiveLabel setTruncationIndicatorImage:[UIImage imageNamed:@"Add-Caption-Plus"]
                                                withSize:CGSizeMake(22,self.responsiveLabel.font.lineHeight)
-                                              andAction:^(NSString *tappedString) {
-        self.messageLabel.text = @"You have tapped token image";
-      }];
+                                              andAction:tap];
      break;
     }
     default:

@@ -143,7 +143,9 @@
 				19CB669F205A206D007688CB /* HSResponsiveLabel */,
 				69D5E5661AB3040D00B64BDE /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		69D5E5661AB3040D00B64BDE /* Products */ = {
 			isa = PBXGroup;
