@@ -17,10 +17,10 @@ static NSString *kRegexStringForHashTag = @"#(\\w+){1,}?";
 static NSString *kRegexStringForUserHandle = @"@(\\w+){1,}?";
 static NSString *kRegexFormatForSearchWord = @"(%@)";
 
-NSString *RLTapResponderAttributeName = @"TapResponder";
-NSString *RLHighlightedForegroundColorAttributeName = @"HighlightedForegroundColor";
-NSString *RLHighlightedBackgroundColorAttributeName = @"HighlightedBackgroundColor";
-NSString *RLHighlightedBackgroundCornerRadius = @"HighlightedBackgroundCornerRadius";
+NSAttributedStringKey const RLTapResponderAttributeName = @"TapResponder";
+NSAttributedStringKey const RLHighlightedForegroundColorAttributeName = @"HighlightedForegroundColor";
+NSAttributedStringKey const RLHighlightedBackgroundColorAttributeName = @"HighlightedBackgroundColor";
+NSAttributedStringKey const RLHighlightedBackgroundCornerRadius = @"HighlightedBackgroundCornerRadius";
 
 
 @interface ResponsiveLabel ()

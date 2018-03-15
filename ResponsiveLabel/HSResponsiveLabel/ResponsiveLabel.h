@@ -13,11 +13,10 @@
  Custom NSTextAttributeName which takes value of type PatternTapHandler.
  It specifies the action to be performed when a range of text with that attribute is tapped.
  */
-extern NSString *RLTapResponderAttributeName;
-extern NSString *RLHighlightedForegroundColorAttributeName;
-extern NSString *RLHighlightedBackgroundColorAttributeName;
-extern NSString *RLHighlightedBackgroundCornerRadius;
-
+FOUNDATION_EXPORT NSAttributedStringKey const RLTapResponderAttributeName;
+FOUNDATION_EXPORT NSAttributedStringKey const RLHighlightedForegroundColorAttributeName;
+FOUNDATION_EXPORT NSAttributedStringKey const RLHighlightedBackgroundColorAttributeName;
+FOUNDATION_EXPORT NSAttributedStringKey const RLHighlightedBackgroundCornerRadius;
 
 /**
  Type for responder block to be specfied with RLTapResponderAttributeName
