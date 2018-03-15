@@ -12,10 +12,15 @@
 
 @interface MainViewController ()
 
-@property (weak, nonatomic) IBOutlet ResponsiveLabel *responsiveLabel;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentControl;
-@property (weak, nonatomic) IBOutlet UIButton *truncationEnableButton;
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;
+
+@property (weak, nonatomic) IBOutlet ResponsiveLabel *responsiveLabel;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentControl;
+@property (weak, nonatomic) IBOutlet UIButton *detectHashtagButton;
+@property (weak, nonatomic) IBOutlet UIButton *detectUserHandleButton;
+@property (weak, nonatomic) IBOutlet UIButton *detectURLButton;
+@property (weak, nonatomic) IBOutlet UIButton *truncationEnableButton;
 @property (weak, nonatomic) IBOutlet UIButton *labelEnableButton;
 @property (weak, nonatomic) IBOutlet UIButton *highlightButton;
 
@@ -39,7 +44,7 @@
   // Add collapse token
 
   PatternTapResponder tap = ^(NSString *string) {
-    self.responsiveLabel.numberOfLines = 4;
+    self.responsiveLabel.numberOfLines = 1;
   };
 
   NSMutableAttributedString *finalString = [[NSMutableAttributedString alloc]initWithAttributedString:self.responsiveLabel.attributedText];
@@ -53,21 +58,6 @@
   PatternDescriptor *descriptor = [[PatternDescriptor alloc]initWithRegex:expression
                                                            withSearchType:PatternSearchTypeAll withPatternAttributes:@{NSForegroundColorAttributeName:[UIColor brownColor],RLTapResponderAttributeName:stringTapAction}];
   [self.responsiveLabel enablePatternDetection:descriptor];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-  [super viewWillAppear:animated];
-  self.navigationController.navigationBarHidden = YES;
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-  [super viewWillDisappear:animated];
-  self.navigationController.navigationBarHidden = NO;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)enableHashTagButton:(UIButton *)sender {
